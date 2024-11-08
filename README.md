@@ -8,3 +8,4 @@ Build a Loan Approval Prediction Model. Use machine learning techniques to predi
 After developing the model, I then implement an app that depicts the exact values.
 ![Image2](https://github.com/user-attachments/assets/ebb0875e-622c-47d9-96fa-9f77b450fa4f)
 ![Image1](https://github.com/user-attachments/assets/1841f8a7-61e4-4886-8ca4-d5a2c280e569)
+
