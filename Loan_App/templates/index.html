@@ -3,45 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
-    <title>Loan Approval Prediction</title>
+    <title>Loan Approval Predictor</title>
     <link rel="stylesheet" href="/static/styles.css">
 </head>
 <body>
     <div class="container">
-        <h1>Loan Approval Prediction</h1>
+        <h1>Loan Approval Predictor</h1>
         <form method="POST">
-            <label for="gender">Gender (0=Male, 1=Female):</label><br>
-            <input type="number" id="gender" name="gender"><br>
+            <label for="gender">Select Gender:</label>
+            <select name="gender" id="gender">
+                <option value="0">Male</option>
+                <option value="1">Female</option>
+            </select><br>
 
-            <label for="married">Married (0=No, 1=Yes):</label><br>
-            <input type="number" id="married" name="married"><br>
+            <label for="married">Situation:</label>
+            <select name="married" id="married">
+                <option value="0">Not married</option>
+                <option value="1">Married</option>
+            </select><br>
 
-            <label for="dependents">Dependents:</label><br>
-            <input type="number" id="dependents" name="dependents"><br>
+            <label for="dependents">Dependents:</label>
+            <select name="dependents" id="dependents">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select><br>
 
-            <label for="education">Education (0=Not Graduate, 1=Graduate):</label><br>
-            <input type="number" id="education" name="education"><br>
+            <label for="education">Education:</label>
+            <select name="education" id="education">
+                <option value="0">Not Graduate</option>
+                <option value="1">Graduate</option>
+            </select><br>
 
-            <label for="self_employed">Self Employed (0=N0, 1=Yes):</label><br>
-            <input type="number" id="self_employed" name="self_employed"><br>
+            <label for="self_employed">Self Employed:</label>
+            <select name="self_employed" id="self_employed">
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </select><br>
 
-            <label for="applicant_income">Applicant Income:</label><br>
+            <label for="applicant_income">Applicant Income:</label>
             <input type="number" id="applicant_income" name="applicant_income"><br>
 
-            <label for="coapplicant_income">Coapplicant Income:</label><br>
+            <label for="coapplicant_income">Coapplicant Income:</label>
             <input type="number" id="coapplicant_income" name="coapplicant_income"><br>
 
-            <label for="loan_amount">Loan Amount:</label><br>
+            <label for="loan_amount">Loan Amount:</label>
             <input type="number" id="loan_amount" name="loan_amount"><br>
 
-            <label for="loan_amount_term">Loan Amount Term:</label><br>
+            <label for="loan_amount_term">Loan Amount Term:</label>
             <input type="number" id="loan_amount_term" name="loan_amount_term"><br>
 
-            <label for="credit_history">Credit History (0 or 1):</label><br>
-            <input type="number" id="credit_history" name="credit_history"><br>
+            <label for="credit_history">Credit History:</label>
+            <select name="credit_history" id="credit_history">
+                <option value="0">Bad</option>
+                <option value="1">Good</option>
+            </select><br>
 
-            <label for="property_area">Property Area (0=Rural, 1=Semiurban, 2=Urban):</label><br>
-            <input type="number" id="property_area" name="property_area"><br><br>
+            <label for="property_area">Property Area:</label>
+            <select name="property_area" id="property_area">
+                <option value="0">Rural</option>
+                <option value="1">Semiurban</option>
+                <option value="2">Urban</option>
+            </select><br><br>
 
             <input type="submit" value="Predict">
         </form>
